@@ -26,14 +26,14 @@ void moverCavalo() {
     scanf("%d", &direcao);
     
     for (int i = 1; i <= 2; i++) {
-        printf("Etapa %d: Cima\n", i);
+        printf("Casa %d: Cima\n", i);
         if (i == 2) {
             int j = 1;
             while (j <= 1) {
                 if (direcao == 1) {
-                    printf("Etapa %d: Direita\n", i + j);
+                    printf("Casa %d: Direita\n", i + j);
                 } else if (direcao == 2) {
-                    printf("Etapa %d: Esquerda\n", i + j);
+                    printf("Casa %d: Esquerda\n", i + j);
                 } else {
                     printf("Opção errada! Tente Novamente...\n");
                 }
