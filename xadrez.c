@@ -7,15 +7,15 @@ void moverTorre(int passo) {
 }
 
 void moverRainha(int passo) {
-    if (passo > 8) return;
-    printf("Casa %d: Esquerda\n", passo);
-    moverRainha(passo + 1);
+      if (passo > 8) return;
+      printf("Casa %d: Esquerda\n", passo);
+      moverRainha(passo + 1);
 }
 
 void moverBispo(int passo) {
-    if (passo > 5) return;
-    for (int i = 0; i < 1; i++) {
-        printf("Casa %d: Cima, Direita\n", passo);
+      if (passo > 5) return;
+      for (int i = 0; i < 1; i++) {
+      printf("Casa %d: Cima, Direita\n", passo);
     }
     moverBispo(passo + 1);
 }
@@ -31,13 +31,13 @@ void moverCavalo() {
             int j = 1;
             while (j <= 1) {
                 if (direcao == 1) {
-                    printf("Casa %d: Direita\n", i + j);
+                 printf("Casa %d: Direita\n", i + j);
                 } else if (direcao == 2) {
-                    printf("Casa %d: Esquerda\n", i + j);
+                 printf("Casa %d: Esquerda\n", i + j);
                 } else {
-                    printf("Opção errada! Tente Novamente...\n");
+                 printf("Opção errada! Tente Novamente...\n");
                 }
-                j++;
+             j++;
             }
         }
     }
